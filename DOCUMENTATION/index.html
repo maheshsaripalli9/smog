@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Documentation</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+	<style type="text/css">
+		body {
+		padding-top: 60px;
+		padding-bottom: 40px;
+		}
+	</style>
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" id="top">
+	<!-- Documentation Navbar -->
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"></a> <a class="brand" href="#">Carros</a>
+
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li><a class="active" href="#top">Top</a></li>
+						<li><a href="#markup">Markup</a></li>
+						<li><a href="#plugins">Plugins Used</a></li>
+						<li><a href="#styles">Styles</a></li>
+						<li><a href="#javascript">JavaScript</a></li>
+						<li><a href="#credits">Credits</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div><!-- End of Navbar -->
+	<!-- Main Container Beginning -->
+
+	<div class="container">
+		<div class="masthead">
+      <h1>Carros — automotive HTML5 template - Documentation</h1>
+
+      <p>Fully responsive multi-page template built on Bootstrap 3 Framework.</p>
+      <p class="text-center"><a href="#"><img src="assets/img/carros-html.jpg"></a></p>
+
+			<p class="download-info"><a class="btn btn-primary btn-large" href="http://themeforest.net/user/netgon">Item Support</a></p>
+		</div><!-- masthead -->
+
+		<div id="intro">
+			<p class="highlight hero-unit">Thank you for purchasing our item. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="http://themeforest.net/user/netgon">here</a>. Thanks so much!</p>
+		</div><!-- intro -->
+
+		<section id="markup">
+			<div class="page-header">
+				<h1>Markup <small>Markup customization and highlights</small></h1>
+			</div>
+			<p>
+				Carros is a high quality 3 in 1 automotive HTML5 template that is suitable for building automotive websites. If your business is tied with car servicing, workshops or you want to open online parts store, Carros would be a great solution when you decide to build your brand-new business website. The template consists of 3 large HTML packs with more than 30 HTML files. Each pack represents different website scenario: auto repair service, auto tuning service, auto parts retailer. All pages and sections are interchangeable across the template which delivers great flexibility with a lot of combination options. Carros is built on Bootstrap 1170px grid, it’s fully responsive and retina-ready which means amazing mobile user experience.
+			</p>
+			<hr>
+
+			<div class="row">
+				<div class="span3">
+					<h3>General Markup</h3>
+
+					<p>The general template structure is the same throughout the template. Here is the general structure.</p>
+				</div>
+
+				<div class="span9">
+					<pre class="html downtab">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; class=&quot;no-js&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
+    &lt;title&gt;Carros | Repair shop&lt;/title&gt;
+
+    &lt;!-- Disable tap highlight on IE--&gt;
+    &lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;
+
+    &lt;!-- Add to homescreen for Chrome on Android--&gt;
+    &lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;
+    &lt;meta name=&quot;application-name&quot; content=&quot;&quot;&gt;
+    &lt;link rel=&quot;icon&quot; sizes=&quot;192x192&quot; href=&quot;images/touch/chrome-touch-icon-192x192.png&quot;&gt;
+
+    &lt;!-- Add to homescreen for Safari on iOS--&gt;
+    &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;
+    &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot;&gt;
+    &lt;meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;Repair shop&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;images/touch/apple-touch-icon.png&quot;&gt;
+
+    &lt;!-- Tile icon for Win8 (144x144 + tile color)--&gt;
+    &lt;meta name=&quot;msapplication-TileImage&quot; content=&quot;images/touch/ms-touch-icon-144x144-precomposed.png&quot;&gt;
+    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#2F3BA2&quot;&gt;
+
+    &lt;!-- Color the status bar on mobile devices--&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#2F3BA2&quot;&gt;
+
+    &lt;!-- Google fonts--&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Raleway:400,700%7CRoboto+Slab:300,400,700&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- libs styles--&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/animate.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/custom-datepicker.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/jquery.timepicker.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/nouislider.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/select2.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/owl.carousel.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/blueimp-gallery.min.css&quot;&gt;
+
+    &lt;!-- Icon pack--&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/flaticon.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/font-awesome.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/pe-icon-7-stroke.css&quot;&gt;
+
+    &lt;!-- Custom styles--&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+    &lt;script&gt;
+      // Picture element HTML5 shiv
+      document.createElement(&quot;picture&quot;);
+    &lt;/script&gt;
+    &lt;script src=&quot;js/vendor/picturefill.min.js&quot; async&gt;&lt;/script&gt;
+
+    &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+    &lt;!-- WARNING: Respond.js doesn&#39;t work if you view the page via file:// --&gt;
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+  &lt;/head&gt;
+  &lt;body id=&quot;home&quot; class=&quot;page-home&quot;&gt;
+          </pre>
+				</div>
+			</div>
+			<hr>
+
+			<div class="row">
+        <div class="span3">
+          <h3>Features</h3>
+          <p>Main template features</p>
+        </div>
+        <div class="span9">
+          <ol class='list-style' type='1'>
+            <li>3 in 1 large HTML pack: Auto Service, Auto Tuning Center, Auto Parts Retailer</li>
+            <li>30+ professionally crafted HTML pages</li>
+            <li>3 different headers done in 3 themes</li>
+            <li>Bootstrap 3 based</li>
+            <li>100% responsive</li>
+            <li>Modern, clean design</li>
+            <li>Super detailed UI elements</li>
+            <li>Retina-ready vector graphics</li>
+            <li>Outstanding typography work</li>
+            <li>Smooth parallax backgrounds</li>
+            <li>Performant CSS3 animations & transitions</li>
+            <li>Video backgrounds support</li>
+            <li>Valid & well commented HTML5 code</li>
+            <li>Easy-to-customize template</li>
+            <li>Cross-browser optimization</li>
+            <li>BEM used for easy CSS code understanding</li>
+            <li>All source Jade & Sass files included</li>
+            <li>All PSD design files included (save $13)</li>
+            <li>Isotope filtering plugin for masonry galleries included (save $25)</li>
+          </ol>
+        </div>
+      </div>
+			<hr>
+
+			<div class="row">
+				<div class="span12">
+					<p class="highlight hero-unit">In the zip package you download you will find 2 folders: HTML and DOCUMENTATION.</p>
+					<ul>
+						<li>HTML FOLDER: this is the folder that concerns you. It contains the main html and css files. Make the customizations you need and upload this folder files to you server.</li>
+
+						<li>DOCUMENTATION FOLDER: info about this template</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+
+		</section><!-- Markup -->
+
+		<section id="plugins">
+			<div class="page-header">
+				<h1>Plug-ins Used <small>Small description of every plugin used.</small></h1>
+			</div>
+
+			<div class="row">
+				<div class="span12">
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th>Plugin Name</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><code>jQuery</code></td>
+								<td>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</td>
+							</tr>
+
+							<tr>
+								<td><code>Modernizr</code></td>
+								<td>Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.</td>
+							</tr>
+
+							<tr>
+								<td><code>Equal Heights</code></td>
+								<td>Simple jQuery plugin to equalize heights of multiple elements on a page.</td>
+							</tr>
+
+							<tr>
+								<td><code>Jarallax</code></td>
+								<td>High-Performance JavaScript Parallax Effect</td>
+							</tr>
+
+              <tr>
+                <td><code>imagesLoaded</code></td>
+                <td>Detects when images have been loaded.</td>
+              </tr>
+
+              <tr>
+                <td><code>Masonry</code></td>
+                <td>Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall.</td>
+              </tr>
+
+              <tr>
+                <td><code>Isotope</code></td>
+                <td>Filter & sort layouts.</td>
+              </tr>
+
+							<tr>
+								<td><code>blueimp Gallery</code></td>
+								<td>A touch-enabled, responsive and customizable image & video gallery, carousel and lightbox, optimized for both mobile and desktop web browsers.</td>
+							</tr>
+
+							<tr>
+								<td><code>Counter-Up</code></td>
+								<td>Counter-Up is a jQuery plugin that animates a number from zero (counting up towards it).</td>
+							</tr>
+
+							<tr>
+								<td><code>bootstrap-datepicker</code></td>
+								<td>Bootstrap-datepicker provides a flexible datepicker widget in the Bootstrap style.</td>
+							</tr>
+
+							<tr>
+								<td><code>TimePicker</code></td>
+								<td>A lightweight, customizable javascript timepicker plugin for jQuery inspired by Google Calendar.</td>
+							</tr>
+
+              <tr>
+                <td><code>noUiSlider</code></td>
+                <td>noUiSlider is a lightweight JavaScript range slider library. It offers a wide selection of options and settings, and is compatible with a ton of (touch) devices, including those running iOS, Android, Windows 8/8.1/10, Windows Phone 8.1 and Windows Mobile 10.</td>
+              </tr>
+              <tr>
+                <td><code>bootstrap-validator</code></td>
+                <td>A user-friendly HTML5 form validation jQuery plugin for Bootstrap.</td>
+              </tr>
+
+              <tr>
+                <td><code>Select2</code></td>
+                <td>Select2 gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options.</td>
+              </tr>
+              <tr>
+                <td><code>Owl Carousel</code></td>
+                <td>Responsive carousel slider.</td>
+              </tr>
+							<tr>
+								<td><code>Sly</code></td>
+								<td>JavaScript library for one-directional scrolling with item based navigation support.</td>
+							</tr>
+              <tr>
+                <td><code>jQuery Mouse Wheel Plugin</code></td>
+                <td>A jQuery plugin that adds cross-browser mouse wheel support with delta normalization.</td>
+              </tr>
+              <tr>
+                <td><code>jQuery Easing Plugin</code></td>
+                <td>A jQuery plugin from GSGD to give advanced easing options.</td>
+              </tr>
+              <tr>
+                <td><code>Waypoints</code></td>
+                <td>Waypoints is the easiest way to trigger a function when you scroll to an element.</td>
+              </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<hr>
+		</section>
+
+		<section id="styles">
+			<div class="page-header">
+				<h1>Styles <small>Styles customization and highlights</small></h1>
+			</div>
+
+			<div class="row">
+				<div class="span3">
+					<h3>Stylesheets</h3>
+
+					<p>Here's a list of the stylesheet files we are using with this template, you can find more information opening each file:</p>
+				</div>
+
+				<div class="span9">
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th>File Name</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+
+              <tr>
+                <td><code>css/bootstrap.min.css</code></td>
+                <td>Bootstrap base CSS file.</td>
+              </tr>
+              <tr>
+                <td><code>css/animate.css"</code></td>
+                <td>Animate.css - library for creating animation effects.</td>
+              </tr>
+              <tr>
+                <td><code>css/custom-datepicker.css</code></td>
+                <td>Datepicker custom style</td>
+              </tr>
+              <tr>
+                <td><code>css/jquery.timepicker.css</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><code>css/nouislider.min.css</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><code>css/select2.min.css</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><code>css/owl.carousel.min.css</code></td>
+                <td>Owl carousel - CSS styling for owl carousel slider.</td>
+              </tr>
+              <tr>
+                <td><code>css/blueimp-gallery.min.css</code></td>
+                <td>Blueimp gallery - used for styling portfolio galleries.</td>
+              </tr>
+              <tr>
+                <td><code>css/flaticon.css</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><code>css/font-awesome.min.css</code></td>
+                <td>The iconic font and CSS toolkit.</td>
+              </tr>
+              <tr>
+                <td><code>css/pe-icon-7-stroke.css</code></td>
+                <td>Pixeden Stroke 7 Icon Font Set.</td>
+              </tr>
+              <tr>
+                <td><code>css/style.css</code></td>
+                <td>Main Stylesheet of the template - where you will find most of the customizable CSS.</td>
+              </tr>
+              <tr>
+                <td><code>css/style-rtl.css</code></td>
+                <td>RTL Stylesheet</td>
+              </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section><!-- Styles -->
+
+
+		<section id="javascript">
+			<div class="page-header">
+				<h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+			</div>
+
+			<div class="row">
+				<div class="span3">
+					<h3>JavaScript Files</h3>
+					<p>Here's a list of the javascript files we are using with this template.</p>
+				</div>
+
+				<div class="span9">
+					<table class="table table-bordered table-striped">
+					   <thead>
+							<tr>
+								<th>Plugin Filename</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+              <!-- global libs -->
+              <tr>
+                <td><code>js/google-map.js</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><code>js/vendor/jquery-3.1.1.min.js</code></td>
+                <td>jQuery library. Latest version</td>
+              </tr>
+              <tr>
+                <td><code>js/vendor/modernizr-2.8.3.min.js</code></td>
+                <td>Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.</td>
+              </tr>
+              <tr>
+                <td><code>js/vendor/jquery.easing.min.js</code></td>
+                <td>A jQuery plugin from GSGD to give advanced easing options.</td>
+              </tr>
+              <tr>
+                <td><code>js/rem.min.js</code></td>
+                <td>A polyfill to parse CSS links and rewrite pixel equivalents into head for non supporting browsers.</td>
+              </tr>
+              <tr>
+                <td><code>js/vendor/wNumb.js</code></td>
+                <td>JavaScript Number & Money formatting</td>
+              </tr>
+              <tr>
+                <td><code>js/picturefill.min.js</code></td>
+                <td>A responsive image polyfill.</td>
+              </tr>
+
+
+              <!-- script plugins -->
+              <tr>
+                <td><code>js/jquery.mousewheel.min.js</code></td>
+                <td>A jQuery plugin that adds cross-browser mouse wheel support with delta normalization.</td>
+              </tr>
+              <tr>
+                <td><code>js/imagesloaded.pkgd.min.js</code></td>
+                <td>Checks if all images are loaded or confirmed broken. That allows to build masonry grid correctly.</td>
+              </tr>
+              <tr>
+                <td><code>js/jquery.waypoints.min.js</code></td>
+                <td>Tracing user's scrolling. Used in combo with Animate.css to create onscroll animations.</td>
+              </tr>
+              <tr>
+                <td><code>js/sly.min.js</code></td>
+                <td>JavaScript library for one-directional scrolling with item based navigation support.</td>
+              </tr>
+              <tr>
+                <td><code>js/bootstrap.min.js</code></td>
+                <td>Bootstrap's javascript file.</td>
+              </tr>
+              <tr>
+                <td><code>js/jarallax.min.js<br>js/jarallax-video.min.js</code></td>
+                <td>Creates parallax effect.</td>
+              </tr>
+              <tr>
+                <td><code>js/jarallax-video.min.js</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><code>js/masonry.pkgd.min.js</code></td>
+                <td>Creates photo portfolio layout.</td>
+              </tr>
+              <tr>
+                <td><code>js/isotope.pkgd.min.js</code></td>
+                <td>Filters portfolio categories.</td>
+              </tr>
+              <tr>
+                <td><code>js/jquery.counterup.min.js</code></td>
+                <td>Animated counters in fun facts section.</td>
+              </tr>
+              <tr>
+                <td><code>js/jquery.equalheights.min.js</code></td>
+                <td>This plugin sets pricing tables to the equal heights.</td>
+              </tr>
+              <tr>
+                <td><code>js/owl.carousel.min.js</code></td>
+                <td>Carousel slider for testimonials section.</td>
+              </tr>
+              <tr>
+                <td><code>js/blueimp-gallery.min.js</code></td>
+                <td>Inits portfolio gallery.</td>
+              </tr>
+
+
+              <!-- Forms -->
+              <tr>
+                <td><code>js/bootstrap-datepicker.min.js</code></td>
+                <td>Bootstrap-datepicker provides a flexible datepicker widget in the Bootstrap style.</td>
+              </tr>
+              <tr>
+                <td><code>js/jquery.timepicker.min.js</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><code>js/nouislider.min.js</code></td>
+                <td>noUiSlider is a lightweight JavaScript range slider library.</td>
+              </tr>
+              <tr>
+                <td><code>js/select2.min.js</code></td>
+                <td>Custom selects</td>
+              </tr>
+              <tr>
+                <td><code>js/select2-locate-en.js</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><code>js/validator.min.js</code></td>
+                <td>A user-friendly HTML5 form validation jQuery plugin for Bootstrap.</td>
+              </tr>
+
+
+              <!-- Custom js -->
+              <tr>
+                <td><code>js/main.js</code></td>
+                <td>js file for initialization and customization of the plugins found above.</td>
+              </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<hr>
+
+
+      <!-- Instruction -->
+      <div class="row">
+        <div class="span3">
+          <h3>Classes for header</h3>
+          <p>navbar-default, navbar-accent, navbar-dark</p>
+        </div>
+
+        <div class="span9">
+          <pre class="prettyprint js linenums:0">
+
+&lt;header class=&quot;page-header&quot;&gt;
+  &lt;nav class=&quot;navbar navbar-[class-theme] navbar-repair&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+          </pre>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span3">
+          <h3>Datepicker</h3>
+          <p>Date formats <a href="https://bootstrap-datepicker.readthedocs.io/en/latest/options.html">https://bootstrap-datepicker.readthedocs.io/en/latest/options.html</a></p>
+        </div>
+
+        <div class="span9">
+          <pre class="prettyprint js linenums:88">
+$('.pick-date').datepicker({
+  maxViewMode: 0,
+  autoclose: true,
+  format: "mm/dd/yyyy"
+});
+          </pre>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span3">
+          <h3>Timepicker</h3>
+          <p>Formats <a href="http://jonthornton.github.io/jquery-timepicker/">http://jonthornton.github.io/jquery-timepicker/</a></p>
+        </div>
+
+        <div class="span9">
+          <pre class="prettyprint js linenums:96">
+$('.time-pick').timepicker({
+  'showDuration': true,
+  'timeFormat': 'H:i',
+  'disableTextInput': true
+});
+          </pre>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span3">
+          <h3>Select2 & Validator</h3>
+        </div>
+
+        <div class="span9">
+          <pre class="prettyprint js linenums:104">
+if ($(".select2").length) {
+  $(".select2").select2({
+    width: '100%'
+  });
+}
+
+$.fn.validator.Constructor.INPUT_SELECTOR = ':input:not([type="submit"], button):enabled';
+var formsValid = $('form[data-toggle="validator"]');
+formsValid.validator({
+  focus: false
+}).on('submit', function(e) {
+  if (e.isDefaultPrevented()) {
+    // handle the invalid form...
+  } else {
+    // everything looks good!
+  }
+});
+          </pre>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="span3">
+          <h3>noUiSlider</h3>
+          <p>Documentation <a href="https://refreshless.com/nouislider/">https://refreshless.com/nouislider/</a></p>
+        </div>
+
+        <div class="span9">
+          <pre class="prettyprint js linenums:129">
+noUiSlider.create(sliderRange, {
+  start: [15, 2451],
+  connect: true,
+  range: {
+    min: 1,
+    max: 5000
+  },
+  format: wNumb({
+    decimals: 3,
+    thousand: '.',
+    prefix: '$ '
+  })
+});
+          </pre>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span3">
+          <h3>Customizing facts counters</h3>
+
+          <p>Open <code>js/main.js</code> file with any text editor and jump to the 230 line. You can change delay and duration of the counters animation. Just set those parameters in milliseconds.</p>
+        </div>
+
+        <div class="span9">
+          <pre class="prettyprint js linenums:230">
+$("[data-counter]").counterUp({
+  delay: 10,
+  time: 2000
+});
+          </pre>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span3">
+          <h3>Parallax background</h3>
+        </div>
+
+        <div class="span9">
+          <pre class="prettyprint js linenums:238">
+$('.parallax').jarallax({
+  speed: 0.74,
+  type: 'scroll'
+});
+          </pre>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="span3">
+          <h3>Customizing carousels</h3>
+
+          <p><code>Support mouseDrag, touchDrag</code><br>For more information, please refer to Owl carousel official documentation.</p>
+        </div>
+
+        <div class="span9">
+          <pre class="prettyprint js linenums:269">
+// Carousels
+var catalogCarousel = $(".main-product__carousel");
+var testimonials = $('.testimonials-carousel');
+var brandsCarousel = $(".brands-carousel");
+var aboutGallery = $(".section-about__carousel");
+          </pre>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span3">
+          <h3>Add video for section tour</h3>
+          <p>Video link <code>'3ET1wM5qUpM'</code></p>
+        </div>
+
+        <div class="span9">
+          <pre class="prettyprint js linenums:501">
+var videoTour = '3ET1wM5qUpM';
+          </pre>
+        </div>
+      </div>
+			<hr>
+		</section><!-- JavaScript -->
+
+
+    <!-- Credits -->
+		<section id="credits">
+			<div class="page-header">
+				<h1>Credits Files <small>Some of our credits and sources</small></h1>
+			</div>
+
+			<p>We've used the following images, icons or other files as listed.</p>
+
+			<h3>JavaScript</h3>
+
+			<ol>
+				<li><a href="http://jquery.com/">jQuery</a></li>
+				<li><a href="https://modernizr.com/">Modernizr</a></li>
+        <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing Plugin</a></li>
+        <li><a href="https://refreshless.com/wnumb/">wNumb.js</a></li>
+				<li><a href="https://github.com/afarkas/html5shiv">The HTML5 Shiv</a></li>
+				<li><a href="http://scottjehl.github.io/picturefill">Picturefill</a></li>
+        <li><a href="http://chuckcarpenter.github.io/REM-unit-polyfill">REM unit polyfill</a></li>
+				<li><a href="http://chuckcarpenter.github.io/REM-unit-polyfill">jQuery Mouse Wheel Plugin</a></li>
+				<li><a href="https://github.com/imakewebthings/waypoints">Waypoints</a></li>
+        <li><a href="https://github.com/desandro/imagesloaded">imagesLoaded</a></li>
+        <li><a href="https://github.com/desandro/imagesloaded">imagesLoaded</a></li>
+				<li><a href="http://darsa.in/sly/">Sly</a></li>
+        <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+        <li><a href="https://github.com/nk-o/jarallax">Jarallax</a></li>
+        <li><a href="http://masonry.desandro.com/">Masonry</a></li>
+        <li><a href="http://isotope.metafizzy.co/">Isotope</a></li>
+        <li><a href="https://github.com/bfintal/Counter-Up/">Counter-Up</a></li>
+        <li><a href="https://github.com/mattbanks/jQuery.equalHeights">jQuery Simple Equal Heights</a></li>
+        <li><a href="http://owlcarousel.owlgraphic.com/">Owl carousel</a></li>
+        <li><a href="https://blueimp.github.io/">Blueimp Gallery</a></li>
+        <li><a href="https://github.com/eternicode/bootstrap-datepicker">Datepicker for Bootstrap</a></li>
+        <li><a href="http://jonthornton.github.io/jquery-timepicker/">jquery.timepicker</a></li>
+        <li><a href="https://select2.github.io/">Select2</a></li>
+				<li><a href="https://refreshless.com/nouislider/">noUiSlider</a></li>
+        <li><a href="http://1000hz.github.io/bootstrap-validator/">Bootstrap Validator</a></li>
+        <li><a href="http://samherbert.net/svg-loaders/">SVG Loaders</a></li>
+			</ol>
+
+			<h3>Fonts & Icons</h3>
+			<ol>
+        <li><a href="http://www.flaticon.com/">Flaticon</a></li>
+        <li><a href="http://fontawesome.io/">Font Awesome</a></li>
+        <li><a href="http://www.pixeden.com/icon-fonts/stroke-7-icon-font-set">Pixeden Stroke 7 Icon Font Set</a></li>
+				<li><a href="https://www.google.com/fonts/">Google Fonts</a></li>
+			</ol>
+
+			<h3>Images</h3>
+			<ol>
+        <li><a href="http://www.freepik.com/">Freepik</a></li>
+        <li><a href="http://www.pixabay.com">Pixabay</a></li>
+        <li><a href="http://www.unsplash.com">Unsplash</a></li>
+        <li><a href="https://www.pexels.com/">Pexels</a></li>
+				<li><a href="http://www.shutterstock.com/">Shutterstock</a></li>
+			</ol>
+		</section><!-- Credits -->
+    <hr>
+
+    <!-- Note description -->
+    <p class="note"><strong>Note: </strong><i>All images you may have seen in the live preview are not included to the final purchase.</i><br><strong>Buy license pattern</strong> <a href="https://www.shutterstock.com/pic-358467122.html">https://www.shutterstock.com/pic-358467122.html</a></p><!-- Note description -->
+		<hr>
+
+		<div class="goodbye">
+			<p>Once again, thank you so much for purchasing this item. As we said at the beginning, we'd be glad to help you if you have any questions relating to this item. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+
+			<p>Our profile page - <a href="http://themeforest.net/user/netgon">http://themeforest.net/user/netgon</a></p>
+		</div>
+		<hr>
+
+		<footer>
+			<p>© Netgon 2016</p>
+		</footer>
+	</div><!-- /container -->
+
+	<!-- JS -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/js/bootstrap-transition.js"></script>
+	<script src="assets/js/bootstrap-alert.js"></script>
+	<script src="assets/js/bootstrap-modal.js"></script>
+	<script src="assets/js/bootstrap-dropdown.js"></script>
+	<script src="assets/js/bootstrap-scrollspy.js"></script>
+	<script src="assets/js/bootstrap-tab.js"></script>
+	<script src="assets/js/bootstrap-tooltip.js"></script>
+	<script src="assets/js/bootstrap-popover.js"></script>
+	<script src="assets/js/bootstrap-button.js"></script>
+	<script src="assets/js/bootstrap-collapse.js"></script>
+
+</body>
+</html>
